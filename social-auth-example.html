@@ -10,10 +10,10 @@
     <div id="results"></div>
     <div id="fb-root"></div>
     <script type="text/javascript">
+        AWS.config.region = 'ap-southeast-2';
         var appId = '222078814908337';
         var roleArn = 'arn:aws:iam::<REDACTED>:role/s3TestRole';
         var bucketName = 'h4-tmp';
-        AWS.config.region = 'ap-southeast-2';
         var fbUserId;
         var bucket = new AWS.S3({
             params: {
